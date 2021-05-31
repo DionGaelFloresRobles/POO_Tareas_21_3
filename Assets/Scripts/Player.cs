@@ -16,9 +16,20 @@ public class Player : MonoBehaviour
 
        bdjugadores = GameObject.FindObjectOfType<BaseJugadores>();
      
-
+    CargarDatos(PlayerId);
    }
 
-
+  void CargarDatos (int id){
+      for (int i = 0; i < bdjugadores.nuevoJugador.Length; i++)
+      {
+          if (bdjugadores.nuevoJugador[i].PlayerId==id)
+          {
+           this.nombre= bdjugadores.nuevoJugador[i].nombre; 
+         this.velocidad= bdjugadores.nuevoJugador[i].velocidad; 
+         this.vida= bdjugadores.nuevoJugador[i].vida;    
+          }
+         
+      }  
+    }
 
 }
