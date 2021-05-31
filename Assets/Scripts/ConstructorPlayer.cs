@@ -6,13 +6,22 @@ using UnityEngine;
 public class ConstructorPlayer 
 {
     //Atributos propiedades
+
+public int PlayerId;  
 public float vida;
 public float velocidad;
 public Color color;
 public string nombre;
-public int PlayerId;  
+
 private Transform PosicionActual;
 private int daño;
 
-      //Metodos y comportamientos
+      //Metodo constructor
+      public ConstructorPlayer(int id, float vida, float velocidad, string n){
+      this.PlayerId=id;
+      this.vida=vida;
+      this.velocidad=velocidad;
+      this.nombre=n;
+      }
+
 }

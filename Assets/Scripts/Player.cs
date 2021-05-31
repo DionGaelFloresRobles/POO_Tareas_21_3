@@ -13,12 +13,9 @@ public class Player : MonoBehaviour
     BaseJugadores bdjugadores; 
 
    private void Start() {
-       
+
        bdjugadores = GameObject.FindObjectOfType<BaseJugadores>();
-       this.nombre= bdjugadores.Superman.nombre;
-       this.PlayerId= bdjugadores.Superman.PlayerId;
-       this.vida= bdjugadores.Superman.vida;
-       this.velocidad= bdjugadores.Superman.velocidad;
+     
 
    }
 

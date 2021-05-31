@@ -5,23 +5,16 @@ using UnityEngine;
 public class BaseJugadores : MonoBehaviour
 {
     //cambio en experimentoarray
-    public ConstructorPlayer Superman = new ConstructorPlayer();
-
-    public ConstructorPlayer Zod = new ConstructorPlayer();
-
+    public ConstructorPlayer[] nuevoJugador;
      
     // Start is called before the first frame update
     void Start()
     {
-        Superman.nombre="Superman";
-        Superman.PlayerId=1;
-        Superman.vida=5;
-        Superman.velocidad=6f;
-        
-         Zod.nombre="Zod";
-         Zod.PlayerId=2;
-         Zod.vida=5;
-         Zod.velocidad=8f;
+     nuevoJugador= new ConstructorPlayer[4];
+     nuevoJugador[0]= new ConstructorPlayer(1, 10, 10, "Superman");
+     nuevoJugador[1]= new ConstructorPlayer(2, 15, 10, "Zod");
+     nuevoJugador[2]= new ConstructorPlayer(3, 40, 5, "Doomsday");
+     nuevoJugador[3]= new ConstructorPlayer(4, 9, 15, "Supergirl");
     }
 
     // Update is called once per frame
