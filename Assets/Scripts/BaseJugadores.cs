@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BaseJugadores : MonoBehaviour
 {
-
+    //cambio en experimentoarray
     public ConstructorPlayer Superman = new ConstructorPlayer();
 
     public ConstructorPlayer Zod = new ConstructorPlayer();
